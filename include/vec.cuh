@@ -2,7 +2,6 @@
 
 
 
-#include <type_traits>
 #ifndef __host__
 #define __host__
 #endif
@@ -12,6 +11,7 @@
 
 
 
+#include <type_traits>
 #include <cassert>
 #include <initializer_list>
 #include <iostream> 

@@ -168,7 +168,7 @@ requires (std::is_arithmetic_v<num_T>)
 struct vec : vec_base<dim, vec<dim, num_T>, num_T> {
 
 
-	using vec_base<dim, vec<dim>>::vec_base;
+	using vec_base<dim, vec<dim, num_T>, num_T>::vec_base;
 	num_T data[dim];
 
 

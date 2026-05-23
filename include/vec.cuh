@@ -48,7 +48,7 @@ struct vec_base {
 
 
 
-	__host__ __device__ constexpr vec_base() noexcept {}
+	__host__ __device__ constexpr vec_base() noexcept = default;
     __host__ __device__ constexpr vec_base(const num_T (&new_data)[dim]) noexcept {
         num_T* d = derived_data();
         for (size_t i = 0; i < dim; i++) d[i] = new_data[i];

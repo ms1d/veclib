@@ -22,13 +22,13 @@ struct vec<2, num_T> : vec_base<2, vec<2, num_T>, num_T> {
 
 
 
-    __host__ __device__ constexpr vec() noexcept = default;
+	constexpr vec() = default;
 
     __host__ __device__ constexpr vec(num_T x, num_T y) noexcept : x(x), y(y) {}
 
-	__host__ __device__ constexpr vec(const vec& other) noexcept = default;
+	constexpr vec(const vec& other) = default;
 
-    __host__ __device__ constexpr vec& operator=(const vec& other) noexcept = default;
+	constexpr vec& operator=(const vec& other) = default;
 
 
 

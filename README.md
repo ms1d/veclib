@@ -20,7 +20,9 @@ base class for specialized vector types (e.g. 3D).
 
 - **Tests**: see `test` for the ctest suite
 
-- **Trivially Copyable**: allows for more efficient copies via memcpy and other libs
+- **Trivially Copyable**: allows for more efficient copies of large vectors
+
+- **Multi-type**: allows for any arithmetic type to be used as a template parameter
 
 ## Method Signatures
 

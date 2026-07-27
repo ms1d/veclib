@@ -25,7 +25,7 @@ struct vec<3, num_T> : vec_base<3, vec<3, num_T>, num_T> {
 
     constexpr vec() = default;
 
-    __host__ __device__ constexpr vec(num_T x, num_T y, num_T z) noexcept : x(x), y(y), z(z) {}
+    __host__ __device__ constexpr vec(num_T _x, num_T _y, num_T _z) noexcept : x(_x), y(_y), z(_z) {}
 
 	constexpr vec(const vec& other) = default;
 
